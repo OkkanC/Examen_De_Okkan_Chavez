@@ -7,6 +7,7 @@ using namespace std;
 void facto(float a);
 void tabla(float a);
 void inciso_tres();
+void diasem();
 void datos1();
 void datos2();
 
@@ -21,6 +22,7 @@ cout<<"Soy un Programa avanzado"<<endl;
 cout<<"1. Factorial de un Número"<<endl;
 cout<<"2. Tablas de Multiplicar"<<endl;
 cout<<"3. Contador de Números"<<endl;
+cout<<"4. Días Laborales"<<endl;	
 cout<<"\nIngresa el Número del Inciso de la Operación a Realizar: ";cin>>ola;
 
 
@@ -44,6 +46,12 @@ switch(ola){
 	system("cls");
 	cout<<"Contador de Números"<<endl;	
 	inciso_tres();
+	break;
+	
+	case 4:
+	system("cls");
+	cout<<"\t\tDías Laborales"<<endl;	
+	diasem();
 	break;
 	
 	default:
@@ -102,7 +110,56 @@ void inciso_tres(){
 	
 }
 
+void diasem(){
+	
+	int opn;
+cout<<"Bienvenido, te diré si Alguno de Estos Días es Laboral"<<endl;
+cout<<"1. Lunes"<<endl;
+cout<<"2. Martes"<<endl;
+cout<<"3. Miércoles"<<endl;
+cout<<"4. Jueves"<<endl;
+cout<<"5. Viernes"<<endl;
+cout<<"6. Sábado"<<endl;
+cout<<"7. Domingo"<<endl;
+cout<<endl<<"Ingresa el Número del día: ";cin>>opn;cout;
 
+switch(opn){
+	
+	case 1:
+		cout<<"Lunes, sí es laboral";
+	break;
+	
+	case 2:
+		cout<<"Martes, sí es laboral";
+	break;
+	
+	case 3:
+		cout<<"Miércoles, sí es laboral";
+	break;
+	
+	case 4:
+		cout<<"Jueves, sí es laboral";
+	break;
+	
+	case 5:
+		cout<<"Viernes, sí es laboral";
+	break;
+	
+	case 6:
+		cout<<"Sábado, no es laboral";
+	break;
+	
+	case 7:
+		cout<<"Domingo, no es laboral";
+	break;
+	
+	default:
+	cout<<"\nNo ingresaste un número válido";
+	break;		
+			
+}
+	
+}
 
 
 
