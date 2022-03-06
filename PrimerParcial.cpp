@@ -3,13 +3,12 @@
 
 using namespace std;
 
-
 void facto(float a);
 void tabla(float a);
 void inciso_tres();
 void diasem();
+void sistema();
 void datos1();
-void datos2();
 
 float num1, num2;
 int ola;
@@ -23,6 +22,7 @@ cout<<"1. Factorial de un Número"<<endl;
 cout<<"2. Tablas de Multiplicar"<<endl;
 cout<<"3. Contador de Números"<<endl;
 cout<<"4. Días Laborales"<<endl;	
+cout<<"5. Sistema Bacario"<<endl;	
 cout<<"\nIngresa el Número del Inciso de la Operación a Realizar: ";cin>>ola;
 
 
@@ -52,6 +52,12 @@ switch(ola){
 	system("cls");
 	cout<<"\t\tDías Laborales"<<endl;	
 	diasem();
+	break;
+	
+	case 5:
+	system("cls");
+	cout<<"$istema Bacario"<<endl;	
+	sistema();
 	break;
 	
 	default:
@@ -161,7 +167,26 @@ switch(opn){
 	
 }
 
-
+void sistema(){
+	
+	int contra = 123456;
+	int contraD;
+	int lim = 3;
+	int i = 1;
+	cout<<"Ingresa tu contraseña: ";cin>>contraD;
+	
+	while (contra != contraD && i < lim){
+		
+		cout<<"La Contraseña es incorrecta, vuelve a Intentarlo: ";cin>>contraD;
+		i=i+1;
+	}
+	
+	if(contra==contraD){
+		cout<<"\nBienvenido Nuevamente Usuario"<<endl<<"Su Saldo Actual es de ...... Q1100";
+	}else{
+		cout<<"\nLas contraseñas ingresadas han sido incorrectas, por lo tanto se deshabilitará la cuenta. Para volver a activarla comuníquese en las oficinas";
+	}
+}
 
 
 
